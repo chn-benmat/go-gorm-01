@@ -29,11 +29,11 @@ func envOrDefault(key, fallback string) string {
 
 func loadDatabaseConfig() databaseConfig {
 	return databaseConfig{
-		Host:     envOrDefault("DB_HOST", "127.0.0.1"),
-		Port:     envOrDefault("DB_PORT", "3306"),
-		User:     envOrDefault("DB_USER", "root"),
-		Password: envOrDefault("DB_PASSWORD", ""),
-		Name:     envOrDefault("DB_NAME", "store_db"),
+		Host:     "localhost",
+		Port:     "3306",
+		User:     "root",
+		Password: "",
+		Name:     "store_db",
 	}
 }
 
